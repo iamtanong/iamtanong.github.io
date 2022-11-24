@@ -1,0 +1,298 @@
+/* Default: Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Ubuntu&display=swap');
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #828282;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #5a5a5a;
+}
+
+
+body {
+    position: relative;
+    background-color: #FFF6CC;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+    height: 100vh;
+}
+
+.main div {
+    margin-top: 30vh;
+}
+
+pre {
+    user-select: none;
+}
+
+
+.cert,
+.proj {
+    margin-top: 25vh;
+    height: max-content;
+    width: 100%;
+    display: flex;
+}
+
+.ctf>h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+}
+
+.ctf>h1 span {
+    font-size: 3.3rem;
+}
+
+.ctf
+
+/* ul */
+    {
+    position: relative;
+    width: 60%;
+    margin: 30px auto;
+}
+
+li {
+    list-style: none;
+}
+
+.card,
+.cadr {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-color: #FFEE99;
+    box-shadow: 0 0 15px #212529cb;
+    border-radius: 15px;
+    margin: 30px 0;
+    display: flex;
+    padding: 15px;
+    transition: .3s;
+}
+
+.card:hover,
+.cadr:hover {
+    cursor: pointer;
+    scale: 1.03;
+    transition: .3s;
+    box-shadow: 0 0 5px #212529da;
+}
+
+.card:active,
+.cadr:active {
+    cursor: pointer;
+    transform: scale(1.015);
+    transition: .4s;
+    box-shadow: 0 0 5px #212529da;
+}
+
+.card img,
+.cadr img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.txt {
+    margin-left: 30px;
+}
+
+.txt p {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.c {
+    margin-right: 5px;
+}
+
+.txt h1,
+.c h1 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding-right: 25px;
+}
+
+.c h5 {
+    color: #000;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    padding-right: 25px;
+}
+
+.pop {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 75vw;
+    height: fit-content;
+    min-height: 60vh;
+    background-color: #FFE985;
+    border-radius: 30px;
+
+    box-shadow: 0 0 40px #21252988;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.close {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    float: right;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.close i {
+    font-size: 2.5rem;
+    /* color: white; */
+}
+
+.close:hover {
+    scale: 1.05;
+    transition: .3s;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.pop .a {
+    position: relative;
+}
+
+.a>img {
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 10px;
+    top: 50%;
+    width: 95%;
+}
+
+.b {
+    display: flex;
+    /* margin: 10px; */
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.b img {
+    width: 135px;
+    height: auto;
+    max-height: min-content;
+    display: block;
+    margin: 5px;
+
+    box-shadow: 0 0 8px #21252988;
+    transition: .3s;
+}
+
+.b img:hover {
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 6px #212529ff;
+    transform: scale(.98);
+}
+
+.c {
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+
+.select {
+    transition: .3s;
+
+    box-shadow: 0 0 10px 10px #21252922;
+}
+
+#bg {
+    position: fixed;
+    z-index: 998;
+    width: 100vW;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #212529cb;
+}
+
+footer {
+    margin-top: 55px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px #2125295f;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+footer span {
+    margin-left: 25px;
+}

@@ -4,5 +4,5 @@
 
 ### Create by me, Tanongsak Anurak.
 
-> You can view the website with github page in this following link:
-> https://iamtanong.github.io/tanongsak.github.io/
+> You can view the website deploy with github-pages with this following link:
+> https://iamtanong.github.io/

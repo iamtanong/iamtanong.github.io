@@ -4,17 +4,17 @@ const cert_list = [
     {
         "name": "camp1",
         "description": "this is camp1",
-        "src": ["./image/img.jpg", "./port/ITC.png", "./port/payao.png"]
+        "src": ["./image/img.webp", "./port/ITC.webp", "./port/payao.webp"]
     },
     {
         "name": "awkfm",
         "description": "egsegeg",
-        "src": ["./port/posn_camp1.jpg", "./port/wongYO.png"]
+        "src": ["./port/posn_camp1.webp", "./port/wongYO.webp"]
     },
     {
         "name": "efe",
         "description": "egsegeg",
-        "src": ["./port/payao.png"]
+        "src": ["./port/payao.webp"]
     },
 ];
 
@@ -26,12 +26,12 @@ const proj_list = [
             ฝั่งPlayer(ผู้เล่น)โดยในที่นี้จะให้ Player เล่นกับ Deeler ที่เป็นบอท โดยมี
             กติกาคือ ฝ่ายใดที่จั่วได้แต้มรวมใกล้เคียง 21 มากที่สุดจะเป็นฝ่ายชนะแต่หากจั่ว
             ได้แต้มรวมเกิน 21 จะแพ้ <br><br><u>หมายเหตุ</u>: ไพ่ที่จั่วมาจากการสุ่มอย่างขาวสะอาด สดใสและบริสุทธิ์<br><br>**ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
-        "src": ["./image/bj888.png", "./port/ITC.png", "./port/pre_mor1.png"]
+        "src": ["./image/bj888.webp", "./port/ITC.webp", "./port/pre_mor1.webp"]
     },
     {
         "name": "551",
         "description": "kajhfeg",
-        "src": ["./port/pre_mor1.png", "./port/thai.png"]
+        "src": ["./port/pre_mor1.webp", "./port/thai.webp"]
     },
 ]
 
@@ -58,7 +58,7 @@ let clk = 0;
 for (let c in cert_list) card[c].addEventListener(
     'click', async () => {
         clk++;
-        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //tanong_eexe");
+        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //iamtanong");
         await Show_Des(cert_list[c])
         await Change_Img();
     })
@@ -66,7 +66,7 @@ for (let c in cert_list) card[c].addEventListener(
 for (let c in proj_list) cadr[c].addEventListener(
     'click', async () => {
         clk++;
-        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //tanong_eexe");
+        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //iamtanong");
         await Show_Des(proj_list[c]);
         await Change_Img();
     })

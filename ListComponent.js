@@ -88,6 +88,9 @@ async function Show_Des(cert) {
         'keydown', (event) => {
             if (event.keyCode === 27) Close_Des()
         })
+
+    // Lock Scroll bar
+    document.querySelector("body").style.overflow = "hidden"
 }
 
 let Close_Des = () => {
@@ -97,6 +100,7 @@ let Close_Des = () => {
         pop.style.display = "none";
         bg.style.display = "none";
     }, 400)
+    document.querySelector("body").style.overflowY = "scroll"
 }
 
 async function Change_Img() {

@@ -22,8 +22,8 @@ const proj_list = [
     {
         "name": "Blackjack888",
         "description": `เกม Blackjack บน Web Appication พัฒนาด้วย Vue.js<br>
-            Blackjack เป็นเกมไพ่สำหรับเล่น 2 คนโดยแบ่งออกเป็นฝั่ง Deeler(เจ้ามือ) และ
-            ฝั่งPlayer(ผู้เล่น)โดยในที่นี้จะให้ Player เล่นกับ Deeler ที่เป็นบอท โดยมี
+            Blackjack เป็นเกมไพ่สำหรับเล่น 2 คนโดยแบ่งออกเป็นฝั่ง Dealer(เจ้ามือ) และ
+            ฝั่งPlayer(ผู้เล่น)โดยในที่นี้จะให้ Player เล่นกับ Dealer ที่เป็นบอท โดยมี
             กติกาคือ ฝ่ายใดที่จั่วได้แต้มรวมใกล้เคียง 21 มากที่สุดจะเป็นฝ่ายชนะแต่หากจั่ว
             ได้แต้มรวมเกิน 21 จะแพ้ <br><br><u>หมายเหตุ</u>: ไพ่ที่จั่วมาจากการสุ่มอย่างขาวสะอาด สดใสและบริสุทธิ์<br><br>**ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
         "src": ["./image/bj888.webp", "./port/ITC.webp", "./port/pre_mor1.webp"]
@@ -74,3 +74,13 @@ for (let c in proj_list) cadr[c].addEventListener(
 // Click Close POP
 document.getElementById('close').addEventListener(
     'click', Close_Des)
+
+// Hide scroll down text
+window.onscroll = async function () {
+    let down = document.querySelector(".down")
+    await setInterval(() => {
+        down.style.animation = "disappear 4s ease"
+    }, 500)
+    setInterval(() => { down.style.display = "none" }, 4000)
+}
+

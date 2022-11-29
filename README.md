@@ -7,4 +7,4 @@
 ### Create by me, Tanongsak Anurak.
 
 > You can view the website deploy with github-pages with this following link:
-> <a href="https://iamtanong.github.io/" target="\_blank">iamtanong.github.io</a>
+> <a href="https://iamtanong.github.io/" target="_blank">iamtanong.github.io</a>

@@ -24,9 +24,13 @@ const proj_list = [
         "description": `เกม Blackjack บน Web Appication พัฒนาด้วย Vue.js<br>
             Blackjack เป็นเกมไพ่สำหรับเล่น 2 คนโดยแบ่งออกเป็นฝั่ง Dealer(เจ้ามือ) และ
             ฝั่งPlayer(ผู้เล่น)โดยในที่นี้จะให้ Player เล่นกับ Dealer ที่เป็นบอท โดยมี
-            กติกาคือ ฝ่ายใดที่จั่วได้แต้มรวมใกล้เคียง 21 มากที่สุดจะเป็นฝ่ายชนะแต่หากจั่ว
-            ได้แต้มรวมเกิน 21 จะแพ้ <br><br><u>หมายเหตุ</u>: ไพ่ที่จั่วมาจากการสุ่มอย่างขาวสะอาด สดใสและบริสุทธิ์<br><br>**ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
-        "src": ["./image/bj888.webp", "./port/ITC.webp", "./port/pre_mor1.webp"]
+            กติกาคือ ฝ่ายใดที่จั่วได้แต้มรวมใกล้เคียง 21 มากที่สุดจะเป็นฝ่ายชนะ แต่หากจั่ว
+            ได้แต้มรวมเกิน 21 จะถูกปรับแพ้ <br><br>
+            <u>หมายเหตุ</u>: ไพ่ที่จั่วมาจากการสุ่มอย่างขาวสะอาด สดใสและบริสุทธิ์
+            <br>( มาจาก Math.random() )
+            <br><br>
+            **ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
+        "src": ["./port/blackjack888.webp", "./port/ITC.webp", "./port/pre_mor1.webp"]
     },
     {
         "name": "551",
@@ -77,10 +81,64 @@ document.getElementById('close').addEventListener(
 
 // Hide scroll down text
 window.onscroll = async function () {
-    let down = document.querySelector(".down")
-    await setInterval(() => {
-        down.style.animation = "disappear 4s ease"
-    }, 500)
-    setInterval(() => { down.style.display = "none" }, 4000)
+    // let down = document.querySelector(".down")
+    // await setInterval(() => {
+    //     down.style.animation = "disappear 4s ease"
+    // }, 500)
+    // setInterval(() => { down.style.display = "none" }, 4000)
 }
+
+// window.onscroll = async function () {
+//     var B = document.body; //IE 'quirks'
+//     var D = document.documentElement; //IE with doctype
+//     D = (D.clientHeight) ? D : B;
+//     let down = document.querySelector(".down")
+
+//     if (D.scrollTop < 250 && down.style.display == "none") {
+//         console.log("back")
+//         await setInterval(() => {
+//             down.style.animation = "appear 4s ease"
+//         }, 500)
+//         setInterval(() => { down.style.display = "block" }, 4000)
+//     }
+//     else if (D.scrollTop > 500 && (down.style.display == "block" || down.style.display == '')) {
+//         console.log("gone")
+//         await setInterval(() => {
+//             down.style.animation = "disappear 4s ease"
+//         }, 500)
+//         setInterval(() => { down.style.display = "none" }, 4000)
+//     }
+
+// }
+
+const body = document.documentElement;
+let cnt = 0;
+window.addEventListener("scroll", async (event) => {
+    let down = document.querySelector(".down");
+
+    if (body.scrollTop <= 150 && (down.style.display != "" && cnt == 0)) {
+        cnt = 1;
+        down.style.display = "block"
+        down.style.opacity = "0"
+        await setTimeout(() => {
+            down.style.animation = "appear 2.5s ease"
+        }, 500);
+        await setTimeout(() => {
+            down.style.opacity = "1"
+        }, 2500)
+
+    }
+    else if (body.scrollTop >= 550 && cnt == 0) {
+        cnt = 1;
+        await setTimeout(() => {
+            down.style.animation = "disappear 2.5s ease"
+        }, 500);
+
+        await setTimeout(() => {
+            down.style.display = "none"
+        }, 2500)
+    }
+    else if (body.scrollTop > 150 && body.scrollTop < 550 && cnt == 1) cnt = 0;
+})
+
 

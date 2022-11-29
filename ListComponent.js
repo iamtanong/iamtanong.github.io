@@ -36,7 +36,6 @@ const bg = document.getElementById("bg")
 
 async function Show_Des(cert) {
     const { name, description, src } = cert;
-    // ? I don;t know why it's should have 'await'
     const node = document.createElement("div");
 
 

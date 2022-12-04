@@ -112,7 +112,7 @@ async function Change_Img() {
     choose[mem].style.filter = "grayscale(.5)";
     choose[mem].style.border = "5px solid #212529bb"
 
-    for (let k in choose) {
+    for (let k = 0; k < choose.length; k++) {
         choose[k].addEventListener('click', () => {
             if (k != mem) {
                 // animation MANUALLY !!

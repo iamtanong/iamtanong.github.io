@@ -57,20 +57,16 @@ const bg = document.getElementById("bg")
 pop.style.display = "none";
 bg.style.display = "none";
 
-let clk = 0;
+
 // Click Certificate
 for (let c in cert_list) card[c].addEventListener(
     'click', async () => {
-        clk++;
-        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //iamtanong");
         await Show_Des(cert_list[c])
         await Change_Img();
     })
 // Click Project
 for (let c in proj_list) cadr[c].addEventListener(
     'click', async () => {
-        clk++;
-        if (clk === 1) console.info("There's ERROR Appear but I don't know WHY it's still work OR HOW to fix. //iamtanong");
         await Show_Des(proj_list[c]);
         await Change_Img();
     })
@@ -79,66 +75,42 @@ for (let c in proj_list) cadr[c].addEventListener(
 document.getElementById('close').addEventListener(
     'click', Close_Des)
 
-// Hide scroll down text
-window.onscroll = async function () {
-    // let down = document.querySelector(".down")
-    // await setInterval(() => {
-    //     down.style.animation = "disappear 4s ease"
-    // }, 500)
-    // setInterval(() => { down.style.display = "none" }, 4000)
-}
 
-// window.onscroll = async function () {
-//     var B = document.body; //IE 'quirks'
-//     var D = document.documentElement; //IE with doctype
-//     D = (D.clientHeight) ? D : B;
-//     let down = document.querySelector(".down")
 
-//     if (D.scrollTop < 250 && down.style.display == "none") {
-//         console.log("back")
-//         await setInterval(() => {
-//             down.style.animation = "appear 4s ease"
-//         }, 500)
-//         setInterval(() => { down.style.display = "block" }, 4000)
-//     }
-//     else if (D.scrollTop > 500 && (down.style.display == "block" || down.style.display == '')) {
-//         console.log("gone")
-//         await setInterval(() => {
-//             down.style.animation = "disappear 4s ease"
-//         }, 500)
-//         setInterval(() => { down.style.display = "none" }, 4000)
-//     }
-
-// }
-
-const body = document.documentElement;
-let cnt = 0;
 window.addEventListener("scroll", async (event) => {
+    const body = document.documentElement;
     let down = document.querySelector(".down");
 
-    if (body.scrollTop <= 150 && (down.style.display != "" && cnt == 0)) {
-        cnt = 1;
-        down.style.display = "block"
-        down.style.opacity = "0"
-        await setTimeout(() => {
-            down.style.animation = "appear 2.5s ease"
-        }, 500);
-        await setTimeout(() => {
-            down.style.opacity = "1"
-        }, 2500)
 
-    }
-    else if (body.scrollTop >= 550 && cnt == 0) {
-        cnt = 1;
+    if (body.scrollTop >= 350) {
         await setTimeout(() => {
             down.style.animation = "disappear 2.5s ease"
         }, 500);
 
         await setTimeout(() => {
             down.style.display = "none"
+            down.style.opacity = "1"
         }, 2500)
     }
-    else if (body.scrollTop > 150 && body.scrollTop < 550 && cnt == 1) cnt = 0;
 })
 
 
+let kbtn = document.querySelectorAll(".toClipboard");
+let contactlist = document.getElementById("contactlist")
+
+for (let i = 0; i < kbtn.length; i++) {
+    kbtn[i].onclick = async function () {
+        let txt = contactlist.children[i].firstChild.innerText;
+        let cptxt = txt.split(" ").length == 2 ? txt.split(" ")[1]
+            : txt.split(" ")[1] + " " + txt.split(" ")[2]
+
+        // Catch  Error
+        try {
+            await navigator.clipboard.writeText(cptxt)
+            alert(`Copy ${cptxt} to Clipboard`)
+        }
+        catch (err) {
+            console.log(err)
+        }
+    };
+}

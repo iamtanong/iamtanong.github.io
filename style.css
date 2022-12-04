@@ -44,6 +44,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
     height: 100vh;
+    /* box-shadow: 0 0 8px #2125295f; */
 }
 
 .main>div {
@@ -55,21 +56,21 @@ pre {
 }
 
 .down {
-    display: block;
     font-size: 1rem;
-    margin-top: 40vh;
+    margin-top: 30vh;
     user-select: none;
+    padding: 10vh 10vw;
 }
 
-.down>i {
+.down>img {
     transition: .5s;
-    font-size: 1.5rem;
+    width: 15px;
     animation: infinite alternate ease-in-out scrollplz 3s;
 }
 
-.down:hover>i {
+.down:hover>img {
     transition: .5s;
-    font-size: 1.8rem;
+    width: 20px;
 }
 
 @keyframes scrollplz {
@@ -227,11 +228,15 @@ li {
     background-color: white;
     cursor: pointer;
     transition: .3s;
+    display: flex;
 }
 
-.close i {
-    font-size: 2.5rem;
-    /* color: white; */
+.close img {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .close:hover {
@@ -328,15 +333,17 @@ footer .cpr i {
 
 footer .cpr span {
     margin-left: 25px;
+    font-size: 1.1rem;
 }
 
 .contact {
     position: absolute;
     top: 50px;
     display: flex;
+    margin-left: 100px;
 }
 
-.contact img {
+.contact>img {
     margin-right: 50px;
     height: 160px;
     /* border: 5px solid #000; */
@@ -345,11 +352,16 @@ footer .cpr span {
 .contact>ul {
     display: block;
     margin-left: 50px;
+    min-width: 320px;
 }
 
 .contact ul li {
     margin: 10px 0;
+    transition: .3s;
+    height: 30px;
+    display: flex;
 }
+
 
 .contact ul li a {
     text-decoration: none;
@@ -357,6 +369,47 @@ footer .cpr span {
     padding: 5px;
 }
 
+.contact ul li:hover a {
+    transition: .3s;
+    text-decoration: underline;
+}
+
+ul li button img {
+    text-decoration: none;
+}
+
+ul li button {
+    display: none;
+}
+
+ul li:hover button {
+    display: flex;
+}
+
+
 a span {
     user-select: none;
+}
+
+.toClipboard {
+    border: none;
+    font-size: 1rem;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+    background: none;
+}
+
+.toClipboard>img {
+    position: relative;
+    width: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toClipboard:hover {
+    cursor: pointer;
 }

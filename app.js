@@ -2,9 +2,9 @@ import { Cert_InnerHTML, Proj_InnerHTML, Close_Des, Show_Des, Change_Img } from 
 
 const cert_list = [
     {
-        "name": "camp1",
-        "description": "this is camp1",
-        "src": ["./image/img.webp", "./port/ITC.webp", "./port/payao.webp"]
+        "name": "ค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์",
+        "description": "เข้าร่วมค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์ ศูนย์มหาวิทยาลัยวลัยลักษณ์<br>ประจำปีการศึกษา 2564",
+        "src": ["./port/posn_camp2.webp", "./port/pccwu.jpg", "./port/279151887_528583818803247_7542267046264112051_n.jpg"]
     },
     {
         "name": "awkfm",

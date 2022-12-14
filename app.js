@@ -1,20 +1,22 @@
-import { Cert_InnerHTML, Proj_InnerHTML, Close_Des, Show_Des, Change_Img } from "./ListComponent.js";
+import { Cert_InnerHTML, Proj_InnerHTML, Close_Des, Show_Des } from "./ListComponent.js";
+
+console.warn("This website is not finist yet.\n I'm so sorry.")
 
 const cert_list = [
     {
         "name": "ค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์",
-        "description": "เข้าร่วมค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์ ศูนย์มหาวิทยาลัยวลัยลักษณ์<br>ประจำปีการศึกษา 2564",
+        "description": `เข้าร่วมค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์ ศูนย์มหาวิทยาลัยวลัยลักษณ์<br>ประจำปีการศึกษา 2564`,
         "src": ["./port/posn_camp2.webp", "./port/pccwu.jpg", "./port/279151887_528583818803247_7542267046264112051_n.jpg"]
     },
     {
-        "name": "awkfm",
-        "description": "egsegeg",
-        "src": ["./port/posn_camp1.webp", "./port/wongYO.webp"]
+        "name": "การประกวดนวัตกรรมสร้างเสริมสุขภาพ",
+        "description": `เข้าร่วมรอบ 20 ทีมสุดท้าย ในการประกวดนวัตกรรมสร้างเสริมสุขภาพ Thai Health INNO Award ครั้งที่ 3 จัดโดยสสส.`,
+        "src": ["./port/sorsorsor.webp"]
     },
     {
-        "name": "efe",
-        "description": "egsegeg",
-        "src": ["./port/payao.webp"]
+        "name": "ค่าย IT Camp ครั้งที่ 18",
+        "description": `เข้าร่วมค่าย IT Camp ครั้งที่ 18 จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง`,
+        "src": ["./port/ITC.webp"]
     },
 ];
 
@@ -60,19 +62,16 @@ bg.style.display = "none";
 
 // Click Certificate
 for (let c in cert_list) card[c].addEventListener(
-    'click', async () => {
-        await Show_Des(cert_list[c])
-        await Change_Img();
-    })
+    'click', async () => { await Show_Des(cert_list[c]) })
 // Click Project
 for (let c in proj_list) cadr[c].addEventListener(
-    'click', async () => {
-        await Show_Des(proj_list[c]);
-        await Change_Img();
-    })
+    'click', async () => { await Show_Des(proj_list[c]); })
 
 // Click Close POP
 document.getElementById('close').addEventListener(
+    'click', Close_Des)
+// Click Outside Close POP
+document.getElementById('bg').addEventListener(
     'click', Close_Des)
 
 

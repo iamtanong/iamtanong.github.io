@@ -90,6 +90,8 @@ async function Show_Des(cert) {
 
     // Lock Scroll bar
     document.querySelector("body").style.overflow = "hidden"
+
+    await Change_Img();
 }
 
 let Close_Des = () => {
@@ -132,4 +134,4 @@ async function Change_Img() {
     }
 }
 
-export { Cert_InnerHTML, Proj_InnerHTML, Show_Des, Close_Des, Change_Img };
+export { Cert_InnerHTML, Proj_InnerHTML, Show_Des, Close_Des }; 

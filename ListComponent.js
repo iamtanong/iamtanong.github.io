@@ -91,6 +91,11 @@ async function Show_Des(cert) {
     // Lock Scroll bar
     document.querySelector("body").style.overflow = "hidden"
 
+    let ck = name.split(" ");
+    if (ck[1] == "Open" && ck[2] == "House") {
+        document.querySelector(".select").style.minWidth = "225px"
+    }
+
     await Change_Img();
 }
 

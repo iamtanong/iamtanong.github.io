@@ -295,6 +295,7 @@ li {
     margin-right: 10px;
     top: 50%;
     width: 95%;
+    min-width: 400px;
 }
 
 .b {

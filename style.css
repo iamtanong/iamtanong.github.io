@@ -307,7 +307,7 @@ li {
 
 .b img {
     width: 135px;
-    height: auto;
+    height: min-content;
     max-height: min-content;
     display: block;
     margin: 5px;

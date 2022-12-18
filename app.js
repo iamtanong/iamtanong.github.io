@@ -6,17 +6,17 @@ const cert_list = [
     {
         "name": "ค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์",
         "description": `เข้าร่วมค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์ ศูนย์มหาวิทยาลัยวลัยลักษณ์<br>ประจำปีการศึกษา 2564`,
-        "src": ["./port/posn_camp2.webp", "./port/pccwu.jpg", "./port/279151887_528583818803247_7542267046264112051_n.jpg"]
+        "src": ["./port/posn_camp2.webp", "./port/IMG_2962.webp", "./port/279151887_528583818803247_7542267046264112051_n.jpg"]
     },
     {
         "name": "การประกวดนวัตกรรมสร้างเสริมสุขภาพ",
         "description": `เข้าร่วมรอบ 20 ทีมสุดท้าย ในการประกวดนวัตกรรมสร้างเสริมสุขภาพ Thai Health INNO Award ครั้งที่ 3 จัดโดยสสส.`,
-        "src": ["./port/sorsorsor.webp"]
+        "src": ["./port/sorsorsor.webp", "./port/156502241_215132990299968_39266789145550151_n.webp", "./port/157078091_3755309671243177_7713855071789740590_n.webp"]
     },
     {
         "name": "ค่าย IT Camp ครั้งที่ 18",
         "description": `เข้าร่วมค่าย IT Camp ครั้งที่ 18 จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง`,
-        "src": ["./port/ITC.webp"]
+        "src": ["./port/ITC.webp", "./port/IMG_7784-edit.webp", "./port/IMG_3218.webp"]
     },
     {
         "name": "การแข่งขัน BAMSO ครั้งที่ 1",
@@ -52,7 +52,7 @@ const proj_list = [
             <br>( มาจาก Math.random() )
             <br><br>
             **ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
-        "src": ["./port/blackjack888.webp"]
+        "src": ["./port/blackjack888.webp", "./port/Screenshot (202).webp", "./port/Screenshot (203).webp"]
     },
 ]
 

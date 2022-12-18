@@ -344,6 +344,97 @@ li {
     background-color: #212529cb;
 }
 
+.gbye {
+    display: flex;
+    position: relative;
+}
+
+code {
+    margin: 15px auto;
+    background-color: #151700;
+    border-radius: 15px;
+    min-width: 45vw;
+    min-height: 15vh;
+    padding: 50px;
+    color: #fafafa;
+    letter-spacing: .03rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+code .comment {
+    color: #56d364;
+}
+
+code .console {
+    color: #f39c12;
+}
+
+code .log {
+    color: #FFE66D;
+}
+
+code .str {
+    color: #96E072;
+}
+
+code .str>div {
+    display: inline;
+    padding: 0px 3px;
+}
+
+.script {
+    margin-left: auto auto;
+}
+
+code #code {
+    position: relative;
+    top: 48%;
+    left: 100%;
+
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+code #code:active {
+    background-color: #ddd;
+}
+
+.decor {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF5F56;
+}
+
+.decor::before {
+    position: absolute;
+    content: "";
+    left: 16px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFBD2E;
+}
+
+.decor::after {
+    position: absolute;
+    content: "";
+    left: 32px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #27C93F;
+}
+
 footer {
     margin-top: 55px;
     position: relative;

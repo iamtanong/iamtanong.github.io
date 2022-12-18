@@ -128,3 +128,9 @@ for (let i = 0; i < kbtn.length; i++) {
         }
     };
 }
+
+let strEdit = document.querySelector(".strEdit");
+strEdit.innerText = "Nice to meet you";
+document.getElementById("code").addEventListener("click", () => {
+    console.log(strEdit.innerText);
+})

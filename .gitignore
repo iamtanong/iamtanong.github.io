@@ -1,3 +1,4 @@
 convert.py
-# ./port/*.png
-# ./port/*.jpg
+# Only .webp image file
+port/*.png
+port/*.jpg

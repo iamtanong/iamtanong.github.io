@@ -6,37 +6,37 @@ const cert_list = [
     {
         "name": "ค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์",
         "description": `เข้าร่วมค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์ ศูนย์มหาวิทยาลัยวลัยลักษณ์<br>ประจำปีการศึกษา 2564`,
-        "src": ["./port/posn_camp2.webp", "./port/IMG_2962.webp", "./port/279151887_528583818803247_7542267046264112051_n.jpg"]
+        "src": ["./port/posn/posn_camp2.webp", "./port/posn/IMG_2962.webp", "./port/posn/279151887_528583818803247_7542267046264112051_n.webp"]
     },
     {
         "name": "การประกวดนวัตกรรมสร้างเสริมสุขภาพ",
         "description": `เข้าร่วมรอบ 20 ทีมสุดท้าย ในการประกวดนวัตกรรมสร้างเสริมสุขภาพ Thai Health INNO Award ครั้งที่ 3 จัดโดยสสส.`,
-        "src": ["./port/sorsorsor.webp", "./port/156502241_215132990299968_39266789145550151_n.webp", "./port/157078091_3755309671243177_7713855071789740590_n.webp"]
+        "src": ["./port/TH INNO award/sorsorsor.webp", "./port/TH INNO award/156502241_215132990299968_39266789145550151_n.webp", "./port/TH INNO award/157078091_3755309671243177_7713855071789740590_n.webp"]
     },
     {
         "name": "ค่าย IT Camp ครั้งที่ 18",
         "description": `เข้าร่วมค่าย IT Camp ครั้งที่ 18 จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง`,
-        "src": ["./port/ITC.webp", "./port/IMG_7784-edit.webp", "./port/IMG_3218.webp"]
+        "src": ["./port/ITC18/ITC.webp", "./port/ITC18/IMG_7784-edit.webp", "./port/ITC18/IMG_3218.webp"]
     },
     {
         "name": "การแข่งขัน BAMSO ครั้งที่ 1",
         "description": `เข้ารอบ 10 ทีมสุดท้าย ในสาขาคอมพิวเตอร์ การแข่งขันตอบปัญหาวิชาการทางวิทยาศาสตร์และคณิตศาสตร์ จัดโดยโรงเรียนบดินทรเดชา(สิงห์ สิงหเสนี) (BAMSO ครั้งที่ 1)`,
-        "src": ["./port/bamso.webp"]
+        "src": ["./port/bamso/bamso.webp"]
     },
     {
         "name": `การแข่งขันมหกรรมวิชาการระดับชาติ "นวัตกรรม เทคโนโลยี 46ICT พัฒนาสู่มาตรฐานสากล"`,
         "description": `ได้รับรางวัลเหรียญเงินการแข่งขันโครงงานสะเต็มศึกษาและกล่องสมองกล(STEM & microcontroller Project)นำเสนอภาษาอังกฤษ ระดับชั้นม.4-6 ในการแข่งขันมหกรรมวิชาการระดับชาติ "นวัตกรรม เทคโนโลยี 46ICT พัฒนาสู่มาตรฐานสากล" จัดโดยกลุ่มโรงเรียนผู้นำ 46ICT โรงเรียนในฝันและเครือข่าย ณ โรงเรียนพะเยาพิทยาคมและมหาวิทยาลัยพะเยา"`,
-        "src": ["./port/payao.webp"]
+        "src": ["./port/46-ICT/payao.webp"]
     },
     {
         "name": "เข้าร่วมการแข่งขัน World Robot Game Thailand Championship 2018",
         "description": `เข้าร่วมการแข่งขัน World Robot Game Thailand Championship 2018 ในหมวดการแข่ง หุ่นยนต์ดับเพลิง จัดโดยบริษัท อินโนเวตีฟ เอกเพอริเมนต์ จำกัด ณ ศูนย์การค้าเดอะฮับรังสิต`,
-        "src": ["./port/wrg.webp"]
+        "src": ["./port/wrg/wrg.webp"]
     },
     {
         "name": "สตาฟกิจกรรมเปิดบ้านวิชาการ Open House 2022",
         "description": `เป็นสตาฟกิจกรรม Robotics & Coding Workshop ในกิจกรรมเปิดบ้านวิชาการ Open house 2022 โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย นครศรีธรรมราช`,
-        "src": ["./port/เกียรติบัตร Open House.png"]
+        "src": ["./port/Open house/Open House.webp"]
     },
 ];
 
@@ -52,14 +52,14 @@ const proj_list = [
             <br>( มาจาก Math.random() )
             <br><br>
             **ขณะนี้ยังอยู่ระหว่างการพัฒนา`,
-        "src": ["./port/blackjack888.webp", "./port/Screenshot (202).webp", "./port/Screenshot (203).webp"]
+        "src": ["./port/Blackjack888/blackjack888.webp", "./port/Blackjack888/Screenshot (202).webp", "./port/Blackjack888/Screenshot (203).webp"]
     },
     {
         "name": "to webp Converter",
         "description": `โปรแกรมแปลงไฟล์ภาพpng,jpg เป็นไฟล์ webp เพื่อลดขนาดไฟล์
         
         <br><a href="https://github.com/iamtanong/to-webp-Converter" target="_blank">view on Github</a>`,
-        "src": ["./port/Screenshot (208).webp", "./port/Screenshot (204).webp", "./port/Screenshot (210).webp"]
+        "src": ["./port/webp conv/Screenshot (208).webp", "./port/webp conv/Screenshot (204).webp", "./port/webp conv/Screenshot (210).webp"]
     },
 ]
 

@@ -1,7 +1,5 @@
 import { Cert_InnerHTML, Proj_InnerHTML, Close_Des, Show_Des } from "./ListComponent.js";
 
-console.warn("This website is not finist yet.\n I'm so sorry.")
-
 const cert_list = [
     {
         "name": "ค่ายสอวน.ค่าย 1 และ 2 สาขาคอมพิวเตอร์",

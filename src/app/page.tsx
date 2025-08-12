@@ -1,13 +1,5 @@
 import { EN_SPACE, MDASH, RSQUO } from "@/constants";
-import {
-  Blockquote,
-  Box,
-  Divider,
-  Flex,
-  Space,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Blockquote, Divider, Flex, Space, Text, Title } from "@mantine/core";
 
 export default function Home() {
   const a = "&u0027;";

@@ -31,7 +31,7 @@ function ResumePage() {
   const contactInfo: ContactInfo = {
     mobile: "(+66) 092-449-8611",
     email: "tanongsak.anurak@gmail.com",
-    portfolio: "/",
+    portfolio: window.location.origin,
   };
 
   const education: GridContentProps = {

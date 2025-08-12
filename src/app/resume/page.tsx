@@ -13,6 +13,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
+import { useEffect, useState } from "react";
 
 type ContactInfo = {
   mobile: string;
@@ -28,10 +29,16 @@ type Content = {
 };
 
 function ResumePage() {
+  const [origin, setOrigin] = useState("");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setOrigin(window.location.origin);
+    }
+  }, []);
   const contactInfo: ContactInfo = {
     mobile: "(+66) 092-449-8611",
     email: "tanongsak.anurak@gmail.com",
-    portfolio: window.location.origin,
+    portfolio: origin,
   };
 
   const education: GridContentProps = {
